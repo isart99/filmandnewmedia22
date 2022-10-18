@@ -1,0 +1,206 @@
+
+
+/* Parallax modified from this tutorial: https://www.youtube.com/watch?v=rLrLJQBG_qo&ab_channel=Filip*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.align-center{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    font-family: 'Manjari', sans-serif;
+    color: white;
+    font-size: 4em;
+    background-color: black;
+}
+
+.parallax-wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+}
+
+.intro-screen{
+    height: 100vh;
+    background-color: black;
+    
+}
+
+.outro-screen{
+    height: 50vh;
+    background-color: black;
+    
+}
+
+.parallax-group{
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+.parallax-half-group{
+    position: relative;
+    height: 50vh;
+    transform-style: preserve-3d;
+}
+
+.parallax-layer{
+    position: absolute;
+    inset: 0;
+}
+
+.base-layer{
+    /*scale transformation: 1 + (Z transform value * -1) / perspective*/
+    transform: translateZ(-300px) scale(2);
+}
+
+.mid-bottom-layer{
+    transform: translateZ(-200px) scale(1.6);
+}
+
+.mid-layer{
+    transform: translateZ(-150px) scale(1.5);
+}
+
+.mid-top-layer{
+    transform: translateZ(-100px) scale(1.3);
+}
+
+#intro{
+    z-index: 0;
+}
+
+#group-1{
+    z-index: -2;
+}
+
+#group-1 > .base-layer .mid-bottom-layer{
+}
+
+#group-2{
+    z-index: -3;
+    transform: translate(0%, 90%);
+
+}
+
+#group-2 > .mid-layer{
+}
+
+#outro{
+    z-index: 0;
+    padding: 10px;
+    margin-top: 30px;
+
+}
+
+#picture1{
+    transform: translate(-65%, 20%);
+}
+#picture2{
+    transform: translate(65%, 80%);
+    box-shadow: 10px 10px 15px black;}
+
+div{
+}
+#greyboi{
+    text-align: center;
+    color: blue;
+    opacity: 0.5;
+    font-size: 0.5em;
+}
+
+#about1{
+    transform: translate(-85%, 20%);
+}
+
+#top{
+    transform: translate(5%, 30%);
+    text-align: left;
+    margin: 20px;
+    padding: 10px;
+}
+
+#mid{
+    transform: translate(-5%, 60%);
+    text-align: right;
+    margin: 20px;
+    padding: 10px;
+}
+
+#bottom{
+    transform: translate(5%, 170%);
+    text-align: left;
+    margin: 20px;
+    padding: 10px;
+}
+#emphasis{
+    font-family: 'Alatsi', sans-serif;
+    font-size: 1em;
+
+}
+
+h1{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.5em;
+}
+
+h2,h3,h4,h5, h6{
+    font-family: 'Alatsi', sans-serif;
+    font-size: 1.2em;
+}
+
+p, figcaption{
+    font-family: 'Manjari', sans-serif;
+    font-size: 1em;
+}
+
+
+/* Home Page Video -- Code adapted from: https://jsfiddle.net/bootstrapious/mj7s6Lb3 */
+.video-background-holder {
+    position: relative;
+    background-color: black;
+    height: calc(100vh - 72px);
+    min-height: 50rem;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .video-background-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .video-background-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.1;
+    z-index: 1;
+  }

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact the Film & New Media 2022 Class">
+    <meta name="author" content="Isabel Rios">
+    <meta name="keywords" content="film, capstone, nyuad, 2022, university, about, filmmaker, contact">
+
+    <!-- Favicon and Title -->
+    <link rel='icon' href='assets/camera.png' type='image/x-icon' sizes="16x16" />
+    <title>Contact Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alatsi&family=Manjari:wght@100&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+
+    <!-- Edited CSS -->
+    <link rel="stylesheet" href="finalStyle.css">
+
+    <!-- Further Bootstrap CSS -->
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="fixed-top navbar navbar-expand-md navbar-dark ">
+            <div class="container-fluid ">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Menu
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-film" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
+                                </svg> </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html">Main Page</a></li>
+                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="rsvp.html">RSVP for Capstone Screening</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- End of Navbar -->
+
+
+    </header>
+
+    <main id="form-boi">
+        <div class="container">
+            <div class="py-5 text-center">
+                <!-- Title and Subtitle -->
+                <div id="extraPad" class=" d-block mx-auto mb-4">
+                    <h1 class="display-5 fw-bold">CONTACT US</h1>
+                </div>
+                <p class="lead">Any thoughts on our work or looking to collaborate? Feel free to reach out!</p>
+
+            </div>
+            <!-- Contact Info -->
+            <div class="row g-5">
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Your Contact Info</h4>
+                    <form action="https://formspree.io/f/xoqrqykp" method="POST" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">First name*</label>
+                                <input name="firstName" type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Last name<span
+                                        class="text-muted">(Optional)</span></label>
+                                <input name="lastName" type="text" class="form-control" id="lastName" placeholder="">
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email<span
+                                        class="text-muted">(Optional)</span></label>
+                                <input name="emailAddress" type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address for shipping updates.
+                                </div>
+                            </div>
+
+                            <!-- Data -->
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">Affiliation to NYU*</label>
+                                <select name="affiliation" class="form-select" id="state" required>
+                                    <option value="">Choose...</option>
+                                    <option>Undergraduate Student</option>
+                                    <option>Graduate Student</option>
+                                    <option>Faculty Member</option>
+                                    <option>Staff Member</option>
+                                    <option>Outside NYU</option>
+
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid option.
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+                            <!-- Newsletter -->
+                            <h4 class="mb-3">Sign up for the Film and New Media newsletter?</h4>
+
+                            <div class="form-check">
+                                <input name="newsletter" type="checkbox" class="form-check-input" id="same-address">
+                                <label class="form-check-label" for="yes-signup">Sign me up!</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input name="newsletter" type="checkbox" class="form-check-input" id="save-info">
+                                <label class="form-check-label" for="no-signup">No, thanks!</label>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <!-- Text box -->
+                            <div class="mb-3">
+                                <h4 class="mb-3">Your Message</h4>
+
+                                <textarea name="message" class="form-control" id="exampleFormControlTextarea1"
+                                    rows="3">Reach out!</textarea>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+                        <!-- Button to send -->
+                        <button class="w-100 btn btn btn-warning btn-lg" type="submit">Send!</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <hr class="featurette-divider">
+    </main>
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="form-validation.js"></script>
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-end"><a class="bottom" href="#">Back to top</a></p>
+        <p> New York University Abu Dhabi 2022 &middot; <a class="bottom" href="https://nyuad.nyu.edu/en/"
+                target="_blank">NYUAD</a></p>
+    </footer>
+</body>
+
+</html>
